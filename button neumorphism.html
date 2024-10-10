@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neuromorphism Button</title> 
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  .container{
+      background:#ebeef1;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+ /*     text-align: center;*/
+      justify-content: center;
+  }
+  button{
+      color: #000;;
+      margin:20px;
+      padding:30px;
+      width: 250px;
+      border:none;
+      border-radius: 50px;
+      box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
+      -10px -10px 10px -1px rgba(255,255,255,0.70);
+      font-weight: bolder;
+      font-size: 18px;
+      transition: all 1s linear;
+  }
+  button.reject:hover{
+        color:red;
+         box-shadow:inset  10px 10px 10px -1px rgba(10,99,169,0.16),
+             inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+        
+  }
+  button.accept:hover{
+    color:green;
+         box-shadow:inset  10px 10px 10px -1px rgba(10,99,169,0.16),
+          inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+        
+  }
+</style>
+<body>
+  <div class="container">
+    <button type="accept" class="accept">Accept</button>
+    <button type="reject" class="reject">Reject</button>
+  </div>  
+</body>
+</html>
