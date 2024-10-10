@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Neuromorphic UI button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        background: #ebeef1;
+    }
+    input[type="checkbox"]{
+           -webkit-appearance: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 200px;
+            height: 200px;
+            border: 6px solid #ebeef1;
+            border-radius: 50%;
+            outline: none;
+            background: #ebeef1;
+            box-shadow: -10px -10px 12px rgba(255, 255, 255, 0.16),
+                        10px 10px 12px rgba(70, 70, 70, 0.70);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    cursor: pointer;
+    }
+     input[type="checkbox"]:after{
+            font-family: FontAwesome;
+            content: '\f011';
+            font-size: 70px;
+    }
+    input[type="checkbox"]:checked{
+        box-shadow: -10px -10px 12px rgba(255, 255, 255, 0.16),
+        10px 10px 12px rgba(70,70,70,0.70),
+         inset -10px -10px 12px rgba(255, 255, 255, 0.16),
+          inset 10px 10px 12px rgba(70,70,70,0.70);
+    }
+    input[type="checkbox"]:checked{
+        color:green;
+    }
+</style>
+<body>
+    <input type="checkbox">
+    <i class="fa fa-power-off" aria-hidden="true"></i>
+</body>
+</html>

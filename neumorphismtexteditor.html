@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Neumorphism Text Editor</title>
+</head>
+<style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 90px;
+      font-family: 'Poppins',sans-serif;
+      font-weight: bolder;
+      background: #ebeef1;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+span{
+     color: #ebeef1;
+     text-shadow: 8px 8px 12px rgba(255,255,255,0.16),
+                  -8px -8px 12px rgba(10,99,169,0.75);
+                  outline: none;
+}
+</style>
+
+<body>
+    <div class="container">
+        <span contenteditable="true">Text Editor</span>
+    </div>
+</body>
+</html>
